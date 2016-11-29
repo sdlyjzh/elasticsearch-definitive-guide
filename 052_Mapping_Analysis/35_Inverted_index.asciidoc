@@ -57,7 +57,7 @@ Elasticsearch 使用一种称为 ((("inverted index", id="ix_invertidx", range="
 
 * `Quick` 可以小写化为 `quick` 。
 
-* `foxes` 可以 _去茎_ --变为词根的格式-- 为 `fox` 。类似的， `dogs` 可以为去茎为 `dog` 。
+* `foxes` 可以 _词干提取_ --变为词根的格式-- 为 `fox` 。类似的， `dogs` 可以为提取为 `dog` 。
 
 * `jumped` 和 `leap` 是同义词，可以索引为相同的单词 `jump` 。
 
