@@ -1,6 +1,6 @@
 [[analysis-intro]]
 [role="pagebreak-before"]
-=== 分析和分析器Analysis and Analyzers
+=== 分析与分析器
 
 _分析_ ((("analysis", "defined")))包含下面的过程：
 
@@ -159,10 +159,10 @@ TIP: ((("types", "type values returned by analyzers")))每个分析器的 `type`
 
 `analyze` API 是一个有用的工具，它有助于我们理解Elasticsearch索引内部发生了什么，随着深入，我们会进一步讨论它。
 
-==== Specifying Analyzers
+==== 指定分析器
 
 当Elasticsearch在你的文档中检测到一个新的字符串域((("analyzers", "specifying")))，它会自动设置其为一个全文 `字符串` 域，使用 `标准` 分析器对它进行分析((("standard analyzer")))。
 
-你不总是希望这样。可能你想使用一个不同的分析器，适用于你的数据使用的语言。有时候你想要一个字符串域就是一个字符串域--不使用分析，直接索引你传入的精确值，例如用户ID或者一个内部的状态域或标签。
+你不希望总是这样。可能你想使用一个不同的分析器，适用于你的数据使用的语言。有时候你想要一个字符串域就是一个字符串域--不使用分析，直接索引你传入的精确值，例如用户ID或者一个内部的状态域或标签。
 
 要做到这一点，我们必须手动指定这些域的映射。
