@@ -22,7 +22,7 @@ Token 过滤器::
 
    最后，词条按顺序通过每个 _token 过滤器_ 。这个过程可能会改变词条（例如，小写化 `Quick` ），删除词条（例如， 像 `a`， `and`， `the` 等无用词），或者增加词条（例如，像 `jump` 和 `leap` 这种同义词）。
 
-Elasticsearch提供了开箱即用的字符过滤器、((("token filters")))((("tokenizers")))分词器和token 过滤器。 这些可以组合起来形成自定义的分析器以用于不同的目的。我们会在 <<custom-analyzer>> 章节详细讨论。
+Elasticsearch提供了开箱即用的字符过滤器、((("token filters")))((("tokenizers")))分词器和token 过滤器。 这些可以组合起来形成自定义的分析器以用于不同的目的。我们会在 <<custom-analyzers>> 章节详细讨论。
 
 ==== 内置分析器
 
